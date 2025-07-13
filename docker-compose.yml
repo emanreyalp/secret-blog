@@ -3,6 +3,8 @@ services:
     build: .
     container_name: local_jekyll
     tty: true
+    environment:
+      - ENCRYPT_PASSWORD=$ENCRYPT_PASSWORD
     volumes:
       - .:/site
     ports:
