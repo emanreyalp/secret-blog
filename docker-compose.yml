@@ -1,0 +1,9 @@
+services:
+  jekyll-container:
+    build: .
+    container_name: local_jekyll
+    tty: true
+    volumes:
+      - .:/site
+    ports:
+      - "4000:4000"
